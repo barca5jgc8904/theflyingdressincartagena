@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Flying Dress - Colores de tela</title>
+ <link rel="stylesheet" href="../css/estilos.css">
+
+  
+  <style>
+    :root{
+      --bg:#fffdf8;
+      --card-bg: #ffffff;
+      --accent: #ef476f;
+      --gap: 14px;
+    }
+    *{box-sizing:border-box}
+    .aside{
+      padding: 70px;
+      margin:0;
+      font-family: Inter, -apple-system, 'Segoe UI', Roboto, Arial;
+      background: linear-gradient(135deg, #fef9f9 0%, #ffecec 25%, #fff6ea 50%, #ffeefe 75%, #e8f0ff 100%);
+      background-size: 300% 300%;
+      animation: shimmer 12s ease infinite;
+      color:#222; 
+      padding:28px;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    @keyframes shimmer{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    .header1{
+      display:flex;align-items:center;gap:16px;margin-bottom:18px;
+    }
+    .logo{
+      width:68px;height:68px;border-radius:12px;flex:0 0 68px;
+      background:linear-gradient(135deg,#ffd3b6,#ffaaa6);display:grid;place-items:center;font-weight:700;color:#6b2a2a;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    }
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:#4b5563;font-size:14px}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+      gap:var(--gap);
+      max-width:920px;
+      margin-top:18px;
+    }
+
+    /* cada cuadro (no rectangular) */
+    .swatch{
+      background:var(--card-bg);
+      border-radius:10px;
+      padding:8px;
+      display:flex;flex-direction:column;align-items:center;gap:8px;
+      box-shadow: 0 6px 18px rgba(17,24,39,0.06);
+      transition: transform .28s cubic-bezier(.2,.9,.3,1), box-shadow .28s;
+      transform-origin:center center;
+      overflow:visible;
+    }
+
+    /* contenedor de la "tela" (cuadro pequeño, no rectangular) */
+    .fabric{
+      width:68px;height:68px;border-radius:8px;position:relative;overflow:hidden;
+      display:block;box-shadow: inset 0 -6px 12px rgba(0,0,0,0.06);
+      transform-origin:center center;transition: transform .28s cubic-bezier(.2,.9,.3,1);
+    }
+
+    /* efecto scale al pasar el ratón */
+    .swatch:hover{transform: translateY(-8px) scale(1.03);box-shadow:0 14px 34px rgba(17,24,39,0.12)}
+    .swatch:hover .fabric{transform: scale(1.12) rotate(-2deg)}
+
+    /* etiquetas */
+    .name{font-size:13px;color:#1f2937;font-weight:600}
+    .sub{font-size:12px;color:#6b7280}
+
+    /* imagen dentro de la tela (si usas imagenes reales) */
+    .fabric img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* ejemplo para que las telas no sean rectangulares: recorte con clip-path */
+    .fabric.shape-1{clip-path: polygon(10% 0%, 100% 3%, 90% 100%, 0% 85%);} 
+    .fabric.shape-2{clip-path: polygon(0 6%, 100% 0, 100% 86%, 8% 100%);} 
+    .fabric.shape-3{clip-path: polygon(6% 0, 100% 8%, 92% 92%, 0% 78%);} 
+
+    /* responsive */
+    @media (max-width:480px){
+      .grid{grid-template-columns: repeat(3, 1fr);gap:10px}
+      .logo{width:56px;height:56px}
+  .ic h3, p{
+    color: black;
+  }
+     
+      }
+    
+
+
+
+
+     
+  </style>
+</head>
+<body>
+
+
+
+
+  <div class="aside">
+    <div class="header1">
+  <a href="../index.html" class="logo" style="text-decoration: none;"> <- TFG </a>
+    <div>
+      <h1> Fabric color The Flying Dress — Colores </h1>
+      <p class="lead"> Please appreciate the colors of the available dresses </p>
+    </div>
+</div>
+
+  <main>
+    <section class="grid">
+      <!-- Puedes reemplazar los backgrounds con imágenes reales: <img src="ruta/a/tu-tela1.jpg"> -->
+
+      <article class="swatch">
+        <div class="fabric shape-1"><img src="../sub.paginas/imginformacion/dorado.JPG" alt="Tela 1"></div>
+        <div class="name">Golden (dorado)</div>
+        <div class="sub">Seda extres</div>
+      </article>
+
+      <article class="swatch">
+        <div class="fabric shape-2"><img src="./imginformacion/azul cielo.JPG" alt="Tela 2"></div>
+        <div class="name">ASKY (Azul cielo) </div>
+        <div class="sub">Seda extres</div>
+      </article>
+
+      <article class="swatch">
+        <div class="fabric shape-3"><img src="./imginformacion/oro.JPG" alt="Tela 3"></div>
+        <div class="name">Red (Rojo)</div>
+        <div class="sub">Seda extres</div>
+      </article>
+
+      <article class="swatch">
+        <div class="fabric shape-1" style="background: linear-gradient(135deg,#fde2f3,#fbc2eb)"><img src="./imginformacion/blanco.JPG" alt=""></div>
+        <div class="name">White (Blanco)</div>
+        <div class="sub">Seda extres</div>
+      </article>
+
+      <article class="swatch">
+        <div class="fabric shape-2" style="background: linear-gradient(135deg,#bbf7d0,#34d399)"> <img src="./imginformacion/negro.JPG" alt=""></div>
+        <div class="name">Black (negro)</div>
+        <div class="sub">Seda extres</div>
+      </article>
+
+      <article class="swatch">
+        <div class="fabric shape-3" style="background: linear-gradient(135deg,#fef3c7,#fca5a5)"> <img src="./imginformacion/verde oscuro.PNG" alt=""></div>
+        <div class="name">Dark (Verde oscuro)</div>
+        <div class="sub">Seda extres</div>
+      </article>
+
+      <!-- Ejemplo usando imagen real (si subes imágenes a la misma carpeta): -->
+      <!--
+      <article class="swatch">
+        <div class="fabric shape-1">
+          <img src="telas/tela-azul.jpg" alt="Tela azul" />
+        </div>
+        <div class="name">Azul tela real</div>
+        <div class="sub">Reemplaza con tu imagen</div>
+      </article>
+      -->
+
+          <!-- Nuevas 16 imágenes de telas -->
+
+      <article class="swatch"><div class="fabric shape-1"><img src="./imginformacion/oro.JPG" alt="Tela 4"></div><div class="name">Gold (Oro) </div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-2"><img src="./imginformacion/rosado.JPG" alt="Tela 5"></div><div class="name">Pink (Rosado)</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-3"><img src="./imginformacion/gris oscuro.JPG" alt="Tela 6"></div><div class="name">Dark (Gris oscuro)</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-1"><img src="./imginformacion/naranjado.JPG" alt="Tela 7"></div><div class="name"> Golden (Naranjado)</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-2"><img src="./imginformacion/azul.JPG" alt="Tela 8"></div><div class="name">Blue (AZUL)</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-3"><img src="./imginformacion/morado.JPG" alt="Tela 9"></div><div class="name">Purple (Morado)</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-1"><img src="./imginformacion/verde.JPG" alt="Tela 10"></div><div class="name">Green (Verde)</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-2"><img src="./imginformacion/chocolate.JPG" alt="Tela 11"></div><div class="name">Brown (Chocolate)</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-3"><img src="telas/tela12.jpg" alt="Tela 12"></div><div class="name">Color 12</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-3"><img src="telas/tela12.jpg" alt="Tela 12"></div><div class="name">Color 12</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-1"><img src="telas/tela13.jpg" alt="Tela 13"></div><div class="name">Color 13</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-2"><img src="telas/tela14.jpg" alt="Tela 14"></div><div class="name">Color 14</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-3"><img src="telas/tela15.jpg" alt="Tela 15"></div><div class="name">Color 15</div><div class="sub">Seda extres</div></article>
+      <article class="swatch"><div class="fabric shape-1"><img src="telas/tela16.jpg" alt="Tela 16"></div><div class="name">Color 16</div><div class="sub">Seda extres</div></article>
+
+    </section>
+
+    
+
+    <!-- Sección informativa: Centro, Getsemaní y Playas -->
+    <section class="info-section" style="margin-top:26px; max-width:980px;">
+      <h2 style="margin:0 0 12px;font-size:18px;color:#0f172a">Ideal locations for your Flying Dress session</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="ic">🏛️</div>
+          <h3>Centro Histórico (Ciudad Amurallada)</h3>
+          <p>Colonial streets, balconies overflowing with flowers, and colorful architecture—perfect for elegant photos with historic charm..</p>
+        </article>
+
+        <article class="info-card">
+          <div class="ic">🎨</div>
+          <h3>Getsemaní</h3>
+          <p>Bohemian neighborhood with murals and street art. Ideal for more modern, vibrant, and attitude-filled photoshoots..</p>
+        </article>
+
+        <article class="info-card">
+          <div class="ic">🌊</div>
+          <h3>Playas y costas</h3>
+          <p>Sand, sea and sunset: the sea breeze helps to achieve the "flying dress" effect and cinematic photographs.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+  <!-- Botón de WhatsApp -->
+<a class="whatsapp-btn" href="https://wa.me/573007633378?texto=Hello, I'd like information about The Flying Dress in Cartagena." target="_blank">
+    <img src="../img/whatsapp4.webp" alt="WhatsApp">
+</a>
+</body>
+</html>

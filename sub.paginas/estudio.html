@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="../css/estilos.css">
+      <style>
+
+    
+
+
+  
+    .contenedor6-1 {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .contenedor6-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center top;
+        display: block;
+    }
+
+    /* Textos */
+    .texto {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+        white-space: nowrap;
+        opacity: 0;
+        transition: transform 1s ease, opacity 1s ease;
+    }
+
+    /* MUCHÍSIMO MÁS PEGADOS */
+    .texto.arriba {
+        top: 44%; /* casi juntos */
+        transform: translate(-50%, -120px); /* entra desde arriba */
+    }
+
+    .texto.abajo {
+        top: 52%; /* casi juntos */
+        transform: translate(-50%, 120px); /* entra desde abajo */
+    }
+
+    /* Activación automática al cargar */
+    body.loaded .texto.arriba {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+    body.loaded .texto.abajo {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 837px) {
+        .texto {
+            font-size: 2rem;
+        }
+     .contenedor6-1{
+        padding-top: 15%;
+     }
+    }
+
+     @media screen and (max-width: 637px) {
+        .texto {
+            font-size: 20px;
+            left: 50%;
+            text-align: center;
+        }  
+
+           .contenedor6-1{
+        padding-top: 30%;
+     }
+       .texto.arriba {
+        top: 45%;
+    }
+
+           .texto.abajo {
+        top: 49%;
+    }
+    }
+
+      @media screen and (max-width: 495px) {
+
+           .contenedor6-1{
+           
+            height: 100%;
+        }
+
+           .texxtoM{
+        font-size: 20PX;
+     }
+        .texto {
+            font-size: 20px;
+            left: 50%;
+            text-align: center;
+        }  
+
+           .contenedor6-1{
+        padding-top: 30%;
+     }
+       .texto.arriba {
+        top: 60%;
+    }
+
+           .texto.abajo {
+        top: 66%;
+    }
+    .logo{
+        width: 80PX;
+    }
+    }
+
+    
+      @media screen and (max-width: 439px) {
+               .texxtoM{
+        font-size: 15PX;
+     }
+           .logo{
+        width: 70PX;
+    }
+        .texto {
+            font-size: 18px;
+            left: 50%;
+            text-align: center;
+        }        
+     
+       .texto.arriba {
+        top: 60%;
+    }
+
+           .texto.abajo {
+        top: 68%;
+    }
+    
+      }
+
+          
+      @media screen and (max-width: 359px) {
+        .texto {
+            font-size: 18px;
+            left: 50%;
+            text-align: center;
+        }        
+     
+       .texto.arriba {
+        top: 60%;
+    }
+
+           .texto.abajo {
+        top: 66%;
+    }
+    
+      }
+
+         @media screen and (max-width: 297px) {
+        .texto {
+            font-size: 15px;
+            left: 50%;
+            text-align: center;
+        }        
+     
+       .texto.arriba {
+        top: 60%;
+    }
+
+           .texto.abajo {
+        top: 66%;
+    }
+
+          .contenedor6-1{
+        padding-top: 40%;
+     }
+     .texxtoM{
+        font-size: 8PX;
+     }
+
+   
+           .logo{
+        width: 60PX;
+    }
+    
+      }
+
+    
+
+
+
+
+      </style>
+</head>
+<body>
+
+      <header class="menu">
+        <nav class="menu__container">
+            <img src="img/logo3.PNG"  alt="" class="logo">
+            <h3 class="texxtoM">Flying Dress </h3>
+
+
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="../index.html" class="menu__link">HOME</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">ABOUT <img src="img/R.png" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="paquete.html" class="menu__link menu__link--inside">Packages</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./locaciones.html" class="menu__link menu__link--inside">Locations</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./masinformacion.html" class="menu__link menu__link--inside">InFormacion</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item  menu__item--show">
+                    <a href="#" class="menu__link">Other activities  <img src="img/R.png" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="./estudio.html" class="menu__link menu__link--inside"> studio</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./aireLibre.html" class="menu__link menu__link--inside">Outdoors</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./boda.html" class="menu__link menu__link--inside">Wedding</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="../sub.paginas/contacto1.html" class="menu__link">Contact</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src=".//img/menu.webp" class="menu__img">
+            </div>
+        </nav>
+    </header>
+   
+    <div class="contenedor6-1">
+    <img src="./imgestudio/IMGprincipal.jpg" alt="Imagen principal">
+
+    <div class="texto arriba">OUTDOOR</div>
+    <div class="texto abajo">PHOTOGRAPHY</div>
+</div>
+
+         <div class="contenedor7">
+<div class="tamano">
+    <div> <h1>photography studio packages</h1></div>
+  <p>
+    - 10 edited photos <br>
+    - 1 hour session <br>
+    - arrive 15 minutes early <br>
+    - Digital delivery
+  </p>
+</div>
+</div>
+
+<p class="textoG" style="text-align:center;">price of a studio photo session</p>
+
+<div class="contenedor8">
+    <div class="item">
+          <div class="ct">1 client</div>
+        <img src="../sub.paginas/imgestudio/IMG1.jpg" alt="Producto 1">
+        <div class="precio">$130</div>
+    </div>
+
+    <div class="item">
+         <div class="ct">couple</div>
+        <img src="../sub.paginas/imgestudio/IMG2.jpg" alt="Producto 2">
+        <div class="precio">$130</div>
+    </div>
+
+    <div class="item">
+         <div class="ct">1 cliente</div>
+        <img src="./imgestudio/IMG3.jpg" alt="Producto 3">
+        <div class="precio">$130</div>
+    </div>
+
+    <div class="item">
+         <div class="ct">1 client</div>
+        <img src="./imgestudio/IMG4.jpg" alt="Producto 4">
+        <div class="precio">$130</div>
+    </div>
+
+    <div class="item">
+         <div class="ct">1 client</div>
+        <img src="./imgestudio/IMG5.jpg" alt="Producto 5">
+        <div class="precio">$130</div>
+    </div>
+</div>
+
+  <!-- Botón de WhatsApp -->
+<a class="whatsapp-btn" href="https://wa.me/573007633378?texto=Hello, I'd like information about The Flying Dress in Cartagena." target="_blank">
+    <img src="../img/whatsapp4.webp" alt="WhatsApp">
+</a>
+<script src="../js/app.js"></script>
+
+<script>
+    /* Activa la animación cuando carga */
+    window.onload = () => {
+        document.body.classList.add('loaded');
+    };
+</script>
+</body>
+</html>
+
