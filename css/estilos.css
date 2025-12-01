@@ -1,0 +1,1340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.menu{
+    background-color: 
+#ffffff;
+    color: #000000;
+    height: 120px;
+   
+}
+
+/* asegura que el menu este por encima del contenidpo */
+
+.logo{
+    width:120px;
+}
+
+.textoM{
+    font-size: 5PX;
+    text-shadow:  6px 4px 10px rgb(255, 0, 102);
+}
+
+.pago{
+  max-width: 100px;
+  height: auto;
+}
+.pago img{
+    width: 80px;
+   position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+
+.menu__container h3{
+    text-shadow:  6px 4px 10px #ffd700;
+
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menu__link{
+    color: #000000;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu__link:hover{
+    background-color;
+  border-radius: 20%;
+  padding: 20px 50px 20px 50px;
+  color: #f85aac;
+
+}
+
+
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+    width: 16px;
+}
+
+.menu__nesting{
+    list-style: none;
+    transition:clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #ffafcc;
+}
+
+.menu__link--inside{
+    padding: 30px 100px 30px 20px;
+}
+
+.menu__link--inside:hover{
+    background-color: #976376;
+}
+
+.menu__hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+     
+}
+
+.menu__hamburguer img{
+
+  max-width: 100px;
+}
+
+.menu__img{
+    display: block;
+    width: 25px;
+}
+
+@media (max-width:800px){
+
+  
+    .menu__hamburguer{
+        display: flex;
+        max-width: 100px;
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow:hidden ;
+    }
+
+    .menu__item--active{
+        --transform: rotate(0);
+      
+    }
+
+    .menu__item--show{
+        background-color: var(--background);
+    }
+
+
+    .menu__links{
+        position: fixed;
+        max-width: 250px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #ffffff;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+        color: rgb(0, 0, 0);
+    }
+  }
+
+
+
+
+  
+
+/*  VIDEO EN LA PAGINA PRINCIPAL*/
+
+
+ 
+
+
+/* imagenes de fondo del contenedor*/
+#contenedor{
+    max-width: 1600px;
+    height:800px;
+
+  
+}
+
+#titulo{
+    padding: 0 30%;
+    height: 10%;
+     max-width: 1600px;
+    
+    
+    
+}
+
+#contenidos{
+   
+    height: 800px;
+    max-width: 1600px;
+    
+    
+  }
+
+  #text{
+    height: 500px;
+    max-width: 400px;
+    width: 300px;
+    margin: 1em;
+    float: left;
+    font-size: 15px;
+  }
+
+ 
+  .paquetes{
+    max-width: 400px;
+    height: 20px;
+    margin: 150px;
+    text-decoration: none;
+  }
+
+  #img{
+    background-image: url('../img/rosa.jpeg');
+    height: 97%;
+    width: 68%;
+    margin: 1em;
+    float: right;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+
+  }
+
+  .rosa{
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .logo1{
+    width: 50px;
+  }
+
+
+/* 4 imagenes fixed */
+
+
+.row{
+ display: flex;
+ width: 100%;
+ min-height: 300vh;
+ margin: 1em;
+
+}
+
+
+.base{
+    background-color: #1f62e7;
+    margin: 1em;
+}
+
+
+
+
+
+/* LOCATION */
+    
+
+          .contenedor3P {
+          max-width: 1550px;
+            height: 100vh;
+            background-image: url("../sub.paginas/img/bolivar.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+      .contenedor3P  h1, h2 {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px black;
+            opacity: 0;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+     
+        /* Animación para SESSION (viene desde la izquierda) */
+        .sessionP {
+            animation-name: slideLeft;
+        }
+
+        /* Animación para PACKAGE (viene desde la derecha) */
+        .packageP {
+            animation-name: slideRight;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes slideLeft {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideRight {
+            0% { transform: translateX(100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+
+        
+    
+
+
+
+
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+ /* IntersectionObserver  mover imagen location*/
+
+ .principal{
+  height: 650px;
+  max-width: 1800;;
+}
+
+ .total{
+   background: #000;
+    background-image: linear-gradient(180deg, rgba(232, 225, 225, 0.2) 0%, rgb(176, 175, 175) 75%), url('../sub.paginas/img/cartagena3.jpg');
+    /*background-size: cover: redimenciona una imagen de fondo
+    para que cubra completamente su contenedor, manteniendo su 
+    su relacion y aspecto*/
+    background-size: cover;
+    /*background-position: top center: posiciona la imagen de
+    fondo en laparte superior del elemento, alineandola horizomtal
+    en el centro*/
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 1700px;
+    max-width: 1600px;
+   
+
+ }
+
+ .hero{
+    min-height: 100vh;
+    /* display: flex; activa el modelo de caja flexible*/
+    display: flex;
+    /* flex-direction: column; organiza los elemento hijos de
+    un contenedor flexible en una columna, uno de bajo del otro*/
+    flex-direction: column;
+    /* justify-content: center; es una propiedad css que alinea
+    y distribuye elementos a lo largo del eje principal 
+    de un contenedor flexible*/
+    justify-content: center;
+    /*align-items: center; alinear los elementos hijos a lo largo
+    flexible*/
+	align-items: center;
+	color: black
+ }
+
+
+ .hero p{
+    font-size: 28px;
+ }
+
+
+
+.contenedor {
+	color: #000000;
+	font-size: 18px;
+	line-height: 30px;
+	max-width: 600px;
+	margin: auto;
+	text-align: justify;
+    padding: 40px;
+    height: 1800px;
+    padding-left: 45%;
+    padding-top: 50%;
+    padding-right: 50%;
+  
+   
+}
+
+
+#contenedor{
+  height: 900px;
+}
+
+.contenedor .titolo{
+  text-align: center;
+}
+
+ #titulo{
+text-align: center;
+text-shadow: 6px 4px 10px #000000;
+}
+
+
+.contenedor p {
+	margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor img {
+	max-width: 1000px;
+	height: 500px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	border-radius: 5px;
+  align-items: center;
+  border: solid 1px;
+
+
+	
+
+	opacity: 0;
+	transform: scale(0.9);
+	transition: .7s ease-in-out all;
+}
+
+
+
+
+
+.contenedor img.visible {
+	opacity: 1;
+	transform: scale(1) translateX(0);
+}
+
+
+
+
+   
+
+
+
+
+
+
+
+#cuerp0{
+
+max-width: 1550px;
+  height:1100px;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+
+
+  #imgT{
+    background-image: url('../sub.paginas/img/cartagena3.jpg');
+    height: 100%;
+    max-width: 1600px;
+    margin: 1em;
+    float: right;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-size: cover;
+
+  }
+
+
+
+ 
+ #sub{
+     height: 97%;
+    max-width: 1600px;
+    margin: 1em;
+ }
+
+ .contenedor1{
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    height: auto;
+
+    
+
+
+ }
+
+ .contenedor1 img{
+    width: 500px;  
+    height: 700px;
+ }
+
+ .mision{
+    width: 900px;
+   margin-top: 20%;
+    height: auto;
+ 
+ }
+
+ .mision h1{
+       font-size: 20px;
+       padding-bottom: 20PX;
+       max-width: 200px;
+       
+ }
+
+ .mision p{
+
+  max-width: 1600px;
+  height: 300px;
+ }
+  
+
+ /* 3 imagenes y texto*/
+
+ 
+ .contenedortexto{
+  max-width: 1600px;
+  height: 200px;
+    display: flex;
+          justify-content: center;
+          align-items: center;
+ }
+
+ .contenedortexto p{
+  font-size: 17px;
+ }
+
+   .contenedor2-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .contenedor2-1 img {
+        width: 33.33%;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+
+ #imgOscuro img{
+   max-width: 1600px;
+   object-fit: contain;
+   height: 1200px;
+
+  
+  /*
+background-image: url('../img/rojo2.jpg');
+max-width: 1800px;
+height: 100%;
+margin: 1em;
+float: right;
+background-attachment: fixed;
+background-size: 100% 100%;
+background-size: cover;
+*/
+ }
+
+
+
+ 
+    .cuerp1 {
+       max-width: 1550px;
+       height: 800px;
+      
+    
+    }
+
+    .get img{
+        width: 100%;
+        height: 700px;
+    }
+
+    .get p {
+        text-align: center;
+       font-size: 25px;
+       padding-bottom: 20px;
+    }
+
+    .cuerp2C{
+     width: 100%;
+     max-width: 1550px;
+
+    }
+
+    .cuerp2{
+        max-width: 1550PX;
+        height: 400px ;
+        display: flex;
+
+      
+
+
+    }
+  
+    .cuerp2 img{
+       max-width: 100%;
+        height: auto;
+        flex: 1 1 auto;
+        box-sizing: border-box;
+    }
+
+
+
+
+    #cuerp3{
+    
+        max-width: 1880px;
+        height: 700px;
+        margin: 1em;
+        padding: 0.5em;
+    }
+
+
+
+  #imgp{
+    background-image: url('../sub.paginas/img/playa5.avif');
+    height: 100%;
+    width: 100%;
+    margin: 1em;
+    float: right;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-size: cover;
+
+  }
+
+
+   
+
+ #playa1{
+     height: 97%;
+    width: 100%;
+    margin: 1em;
+ }
+
+
+  .cuerp4{
+    
+ max-width: 1600PX;
+        height: 400px ;
+  
+
+  }
+
+  .cuerp4 img{
+        max-width: 100%;
+        height: AUTO;
+  }
+
+ 
+
+
+
+
+ /*   whatsapp  */
+
+    /* Ícono fijo en la esquina inferior derecha */
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;      /* distancia desde abajo */
+        right: 20px;       /* distancia desde la derecha */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        cursor: pointer;
+        z-index: 9999;
+        transition: transform 0.3s ease;
+        
+    }
+
+    .whatsapp-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .whatsapp-btn img {
+        width: 100px;
+        height: 100px;
+    }
+
+ 
+/* pakete */
+
+
+        .contenedor3 {
+          max-width: 1550px;
+            height: 100vh;
+            background-image: url("../sub.paginas/img/azul.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+      .contenedor3  h1, h2 {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px black;
+            opacity: 0;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        /* Animación para SESSION (viene desde la izquierda) */
+        .session {
+            animation-name: slideLeft;
+        }
+
+        /* Animación para PACKAGE (viene desde la derecha) */
+        .package {
+            animation-name: slideRight;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes slideLeft {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideRight {
+            0% { transform: translateX(100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+
+       
+
+
+
+
+
+
+
+        /* tamano paquete */
+
+          .contenedor4 {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tamano {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 1px solid #090000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* animación */
+    
+  }
+
+
+
+  /* EFECTO AL PASAR EL CURSOR */
+  .tamano:hover {
+    transform: scale(1.1); /* Aumenta tamaño */
+  }
+
+  
+
+    .contenedor5 {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1600px;
+        
+    }
+
+    .item {
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: transform .3s ease;
+    }
+
+    .item:hover {
+        transform: scale(1.08);
+    }
+
+    .item img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .precio {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .textoG{
+        background-color: #ffffff;
+        margin: 20PX;
+        padding: 20px;
+    }
+
+    .ct{
+     text-align: center;
+    }
+
+
+    /*PAQUETE DE ESTUDIO*/
+
+        .contenedor6 {
+          width: 2500px;
+            height: 1000px;
+            background-image: url("../sub.paginas/imgestudio/IMGprincipal.jpg");
+             float: right;
+              background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+              flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        
+            
+            
+        }
+
+      .contenedor6  h1, h2 {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px black;
+            opacity: 0;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        /* Animación para SESSION (viene desde la izquierda) */
+        .session {
+            animation-name: slideLeft;
+        }
+
+        /* Animación para PACKAGE (viene desde la derecha) */
+        .package {
+            animation-name: slideRight;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes slideLeft {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideRight {
+            0% { transform: translateX(100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+
+             /* tamano paquete */
+
+          .contenedor7 {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tamano {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 1px solid #090000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* animación */
+    
+  }
+
+
+
+  /* EFECTO AL PASAR EL CURSOR */
+  .tamano:hover {
+    transform: scale(1.1); /* Aumenta tamaño */
+  }
+
+     /* PRECIO DEL ESTUDIO */
+   .contenedor8 {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: transform .3s ease;
+    }
+
+    .item:hover {
+        transform: scale(1.08);
+    }
+
+    .item img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .precio {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .textoG{
+        background-color: #ffffff;
+        margin: 20PX;
+        padding: 20px;
+    }
+
+    .ct{
+     text-align: center;
+    }
+
+
+
+
+
+     /*PAQUETE DE FOTO AL AIRE LIBRE*/
+
+    
+        .contenedor9 {
+          max-width: 1800px;
+            height: 100vh;
+            background-image: url("../sub.paginas/imgAIRELIBRE/CARTAGENA.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+      .contenedor9 h1, h2 {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px black;
+            opacity: 0;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+
+
+        /* CONTACTO */
+
+
+
+        /* ======== COLORES ======== */
+:root{
+  --bg: #0e1623;
+  --cam-body: #1c2533;
+  --accent: #ffd166;
+  --text: #ffffff;
+  --panel: rgba(255,255,255,0.12);
+}
+
+/* ======== PÁGINA ======== */
+main{
+height: 100vh;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg,var(--bg),#0a0f18);
+  color: var(--text);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  padding-top:85px;
+}
+
+/* ======== TÍTULO ======== */
+h1{
+  margin-bottom: 5px;
+  font-size: 32px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  animation: fadeIn 1.2s ease forwards;
+  opacity:0;
+}
+p.subtitle{
+  margin-top:0;
+  opacity:0.8;
+  margin-bottom: 40px;
+  animation: fadeIn 1.2s ease 0.3s forwards;
+  opacity:0;
+}
+
+/* ======== ANIMACIÓN ======== */
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(15px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+/* ======== CÁMARA CSS ======== */
+.camera{
+  width: 350px;
+  height: 220px;
+  background: var(--cam-body);
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  padding: 20px;
+  animation: fadeIn 1.2s ease 0.5s forwards;
+  opacity:0;
+}
+
+/* Parte superior */
+.camera::before{
+  content:"";
+  position:absolute;
+  top:-18px;
+  left:20px;
+  width:120px;
+  height:40px;
+  background:#0b0f15;
+  border-radius:8px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Botón */
+.shutter{
+  position:absolute;
+  right:20px;
+  top:-10px;
+  width:35px;
+  height:35px;
+  background: var(--accent);
+  border-radius:8px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.5);
+}
+
+/* Lente */
+.lens{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background: radial-gradient(circle at 30% 30%, #aac8ff, #0c121a 60%, #000 100%);
+  margin:auto;
+  margin-top:10px;
+  border:5px solid rgba(255,255,255,0.1);
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.6),
+    inset 0 8px 15px rgba(255,255,255,0.05);
+}
+
+/* Panel frontal */
+.panel{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  width:70px;
+  height:40px;
+  border-radius:8px;
+  background: var(--panel);
+}
+
+/* ======== CONTACTOS ======== */
+.contacto-box{
+  margin-top:40px;
+  background: rgba(255,255,255,0.04);
+  padding:20px;
+  width:320px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  animation: fadeIn 1.2s ease 0.8s forwards;
+  opacity:0;
+}
+
+.contacto-box h2{
+  margin:0 0 10px 0;
+  font-size:22px;
+  text-align:center;
+}
+
+.contacto-box a{
+  display:block;
+  color: var(--accent);
+  text-decoration:none;
+  margin:8px 0;
+  font-size:18px;
+  text-align:center;
+}
+
+.contacto-box a:hover{
+  color:#ffe9a8;
+}
+
+/* RESPONSIVO */
+@media (max-width:450px){
+  .camera{ width:280px; height:180px; }
+  .lens{ width:120px;height:120px; }
+  .contacto-box{ width:260px; }
+}
+
+
+/* BODA */
+
+ .contenedor10 {
+            height: 100vh;
+            background-image: url("../sub.paginas/imgboda/img4.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+            max-width: 1600px;
+        }
+
+      .contenedor10  h1, h2 {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px black;
+            opacity: 0;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        /* Animación para SESSION (viene desde la izquierda) */
+        .session {
+            animation-name: slideLeft;
+        }
+
+        /* Animación para PACKAGE (viene desde la derecha) */
+        .package {
+            animation-name: slideRight;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes slideLeft {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideRight {
+            0% { transform: translateX(100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+
+
+         
+#contenedor11{
+    max-width: 1600px;
+    height:800px;
+    margin: 1em;
+    padding: 3.5em;
+    
+
+    
+}
+
+#titul{
+
+    text-shadow:  6px 4px 10px rgb(12, 12, 12);
+    height: 20px;
+    
+}
+
+#contenidos1{
+  max-width: 1600px;
+    margin: 1rem 1em;
+    height: 800px;
+    max-width: 1600px;
+
+  }
+
+  #text1{
+    height: 500px;
+    max-width: 500px;
+    margin: 1em;
+    float: left;
+    margin: 170px 0 0 20px;
+    text-align: left;
+    
+   
+  }
+  .paquetes{
+    margin: 150px;
+    text-decoration: none;
+  }
+
+  #imgboda{
+    background-image: url('../sub.paginas/imgboda/img3.jpg');
+    height: 700px;
+    width: 600px;
+    margin: 1em;
+    float: right;
+    background-position: center;
+    background-size: cover;
+  }
+
+        
