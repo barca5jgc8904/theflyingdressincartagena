@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pagar con PayPal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    :root{
+        --bg:#f4f7fb;
+        --card:#ffffff;
+        --accent:#0070ba;
+        --accent2:#00a0df;
+        --muted:#6b7280;
+        --radius:14px;
+        --shadow:0 10px 30px rgba(0,0,0,0.10);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:var(--bg);
+        padding:40px;
+        margin:0;
+        min-height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .card{
+        background:var(--card);
+        max-width:600px;
+        width:100%;
+        border-radius:var(--radius);
+        box-shadow:var(--shadow);
+        padding:40px;
+        text-align:center;
+    }
+
+    .logo{
+        width:70px;
+        height:70px;
+        border-radius:15px;
+        margin:auto;
+        margin-bottom:15px;
+        background:linear-gradient(135deg, var(--accent), var(--accent2));
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:26px;
+        font-weight:bold;
+        color:white;
+        box-shadow:0px 5px 15px rgba(0,112,186,0.35);
+    }
+
+    h2{
+        margin:10px 0;
+        font-size:26px;
+    }
+
+    p{
+        color:var(--muted);
+        font-size:15px;
+        line-height:1.5;
+        margin-bottom:25px;
+    }
+
+    .btn-paypal{
+        display:inline-block;
+        padding:15px 30px;
+        border-radius:12px;
+        background:linear-gradient(90deg, var(--accent), var(--accent2));
+        color:white;
+        text-decoration:none;
+        font-size:18px;
+        font-weight:bold;
+        box-shadow:0 8px 20px rgba(0,112,186,0.18);
+        transition:transform .15s ease;
+    }
+
+    .btn-paypal:hover{
+        transform:translateY(-3px);
+    }
+
+    .chip-container{
+        margin-top:20px;
+        display:flex;
+        gap:10px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .chip{
+        background:#eef2f7;
+        padding:8px 14px;
+        border-radius:999px;
+        font-size:13px;
+        color:#333;
+    }
+
+    @media(max-width:600px){
+        .card{
+            padding:30px;
+        }
+        h2{
+            font-size:22px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="logo">TF</div>
+
+    <h2>The Flying Dress in Cartagena</h2>
+    <p>Paga de forma segura con PayPal.  
+       Haz clic en el siguiente botón para continuar al pago.</p>
+
+    <!-- ⬇ CAMBIAR SOLO TU PAYPAL.ME ID -->
+    <a href="https://paypal.me/theflyingdress281"
+       class="btn-paypal" target="_blank">
+       Pagar ahora
+    </a>
+
+    <div class="chip-container">
+        <span class="chip">Pago seguro</span>
+        <span class="chip">Sin registros</span>
+        <span class="chip">Rápido y fácil</span>
+    </div>
+</div>
+
+</body>
+</html>
