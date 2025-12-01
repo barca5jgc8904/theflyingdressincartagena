@@ -1,0 +1,1438 @@
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina principal con the flying dress in cartagena</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+<style>
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+   .header{
+    max-width: 1600px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    animation: fadeZoom 16s infinite;
+  }
+
+  /* Animación con zoom suave y cambio */
+  @keyframes fadeZoom {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    5% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    25% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    30% {
+      opacity: 0;
+      transform: scale(1.15);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
+  /* Control del tiempo de cada imagen */
+  .slide:nth-child(1) {
+    animation-delay: 0s;
+    background-image: url('./img/8.jpg');
+    
+  }
+
+  .slide:nth-child(2) {
+    animation-delay: 4s;
+    background-image: url('./img/color.jpg');
+  }
+
+  .slide:nth-child(3) {
+    animation-delay: 8s;
+    background-image: url('./img/flying2.jpg');
+  }
+
+  .slide:nth-child(4) {
+    animation-delay: 12s;
+    background-image: url('./img/flying6.jpg');
+  }
+
+ 
+  
+.titul{
+   
+  max-width: 1600px;
+  height: 110px;
+  text-align: center;
+  
+}
+
+.titul p{
+  margin-top: 80px;
+        text-shadow: 2px 2px 10px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* @MEDIA SCREEN INDEX */
+  
+  @media screen and (max-width: 1116px) {
+
+     .menu{
+  width: 1116px;
+ }
+
+ .contenedor1 img{
+width: 900px;
+height: 200px
+
+ }
+ .header{
+  width: 1116px;
+  height: 900px;
+ }
+
+ .contenedor1 img{
+ width: 900px;
+  height: 800px;
+ }
+
+ #contenedor{
+  width: 1116px;
+ }
+
+ #img{
+  width: 730px;
+ }
+
+
+
+ 
+
+ #text{
+
+  font-size: 16px;
+  height: 300px;
+
+ }
+ .contenedor1{
+ width: 1116px;
+  height: 900px;
+ }
+
+ .mision p{
+  font-size: 20px;
+  height: 100%;
+ }
+
+
+
+
+ #imgOscuro img{
+ width: 1116px;
+height: auto;
+
+ }
+  }
+
+  
+
+
+    @media screen and (max-width: 896px) {
+
+
+
+
+ #img{
+  width: 330px;
+  height: 430px;
+ }
+ 
+    .menu{
+  width: 896px;
+  top: 0px;
+ }
+ 
+
+ .contenedor1 img{
+width: 900px;
+height: 200px
+
+ }
+ .header{
+   width: 896px;
+  height: 700px;
+ }
+
+  #contenedor{
+  width: 896px;
+ height: 600px;
+
+ }
+#contenidos{
+   width: 896px;
+   width: 700px;
+}
+.contenedor1{
+   width: 896px;
+    height: 600px;
+
+}
+
+ .contenedor1 img{
+  height: 600px;
+  width: 500px;
+ }
+
+
+  #imgOscuro img{
+   width: 896px;
+   height: 600px;
+  }
+ 
+
+div.contenedor2{
+  width: 800px;
+}
+
+
+    }
+
+       @media screen and (max-width: 768px) {
+    
+        .menu{
+          width: 768px;
+        }
+ .header{
+   width: 768px;
+ 
+ }
+
+ 
+  #contenedor{
+ width: 768px;
+ 
+
+ }
+#contenidos{
+   width: 768px;
+}
+
+#text{
+  font-size: 13px;
+}
+.contenedor1{
+   width: 768px;
+
+}
+
+
+ .mision h1{
+  font-size: 15px;
+ }
+
+  .mision p{
+    font-size: 13px;
+  }
+
+  .contenedortexto p{
+    font-size: 13px;
+  }
+
+  #imgOscuro img{
+   width: 768px;
+  }
+ 
+
+
+
+  
+ .contenedor2-1 img {
+            width: 33.33%;
+        }
+
+       }
+
+
+     @media screen and (max-width: 480px) {
+
+      .texxtoM{
+        font-size: 15px;
+      }
+      .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 40px;
+        top: 25px;
+        
+      }
+  .pago img{
+    width: 45px;
+  }
+
+.logo{
+  width: 90px;
+}
+.menu__hamburguer{
+  padding-right: -40px;
+}
+.menu{
+  width: 480px;
+  padding-right: -40px;
+}
+
+ 
+ .header{
+  width: 480px;
+  height: 410px;
+  margin-top: 60px;
+ 
+ }
+
+ #contenedor{
+  width: 480px;
+ height: 500px;
+
+ 
+ }
+#contenidos{
+    width: 480px;
+    height: 500px;
+ 
+}
+
+#img{
+  width: 300px;
+  background-attachment: scroll;
+  h400px
+}
+#text{
+  overflow: scroll solid;
+  height: 20px;
+  padding-bottom: 190px;
+  font-size: 13px;
+  width: 110px;
+  margin-top: 5%;
+}
+.contenedor1{
+     width: 480px;
+
+}
+
+.contenedor1 img{
+  width: 250px;
+  height: 450px;
+}
+
+ .mision h1{
+   font-size: 15;
+   overflow: scroll;  
+ }
+
+   .mision p{
+    width: 230px;
+   }
+
+ 
+
+
+  div.contenedor2{
+ width: 480px;
+
+}
+   .contenedor2-1 {
+            gap: 5px;
+        }
+        .contenedor2-1 img {
+            width: 33.33%;
+        }
+
+        #imgOscuro{
+      width: 480px;
+      height: 300px;
+  }
+         #imgOscuro img{
+   width: 480px;
+    height: 300px;
+  }
+     }
+
+      @media screen and (max-width: 430px) { 
+
+            .logo {
+            width: 70px;
+            }
+
+            .menu__hamburguer img{
+
+              width: 20px;
+            }
+            
+             .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        
+                   }
+           .pago img{
+              width: 40px;
+               }
+
+            .texxtoM{
+              font-size: 14PX;
+            }
+            .menu{
+              width: 430px;
+              height: 120px;
+            }
+            .header{
+              width: 430px;
+              margin-top: 60px;
+              height: 300px;
+            }
+
+            .titul p{
+              font-size: 12px;
+               height: 20px;
+          }
+          .titul{
+            height: 50px;
+          }
+
+          #text{
+            font-size: 11px;
+            height: 100px;
+            overflow: scroll;
+              text-align: justify;
+          
+          }
+           #contenedor{
+             width: 430px;
+            height: 230px;
+           }
+           #contenidos{
+              width: 430px;
+            height: 230px;
+           }
+           #img{
+            width: 230px;
+            height: 200px;
+           }
+           .contenedor1{
+            width: 430px;
+            height: 480px;
+           }
+              .mision p{
+    width: 110px;
+    height: 190px;
+    font-size: 11px;
+      text-align: justify;
+  }
+
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 11px;
+          width: 350px;
+            text-align: justify;
+       
+        
+      
+        
+        }
+         #imgOscuro{
+          width: 430px;
+          height: 260px;
+         }
+
+               #imgOscuro img{
+   width: 430px;
+   height: 290px;
+    
+
+  }
+
+    .whatsapp-btn{
+      width: 40px;
+     height: 40px; 
+    }
+  .whatsapp-btn img{
+    width: 70px;
+    height: 70px;
+  }
+        }
+
+ 
+
+      @media screen and (max-width: 412px) { 
+
+            .logo {
+            width: 70px;
+            }
+
+            .menu__hamburguer img{
+
+              width: 20px;
+            }
+            
+             .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        
+                   }
+           .pago img{
+              width: 40px;
+               }
+
+            .texxtoM{
+              font-size: 14PX;
+            }
+            .menu{
+              width: 412px;
+              height: 120px;
+            }
+            .header{
+              width: 412px;
+              margin-top: 60px;
+              height: 300px;
+            }
+
+            .titul p{
+              font-size: 12px;
+               height: 20px;
+          }
+          .titul{
+            height: 50px;
+          }
+
+          #text{
+            font-size: 11px;
+            height: 100px;
+            overflow: scroll;
+              text-align: justify;
+          
+          }
+           #contenedor{
+            width: 412px;
+            height: 230px;
+           }
+           #contenidos{
+             width: 412px;
+            height: 230px;
+           }
+           #img{
+            width: 230px;
+            height: 200px;
+           }
+           .contenedor1{
+           width: 412px;;
+            height: 480px;
+          
+           }
+             .mision p{
+    width: 100px;
+    height: 390px;
+    font-size: 11px;
+      text-align: justify;
+  }
+
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 11px;
+          width: 350px;
+            text-align: justify;
+        
+        }
+
+        .contenedor1 img{
+            width: 250;
+            height: 470px;
+        }
+         #imgOscuro{
+          width: 412px;
+          height: 250px;
+         }
+
+               #imgOscuro img{
+   width:  412px;
+   height: 260px;
+    
+
+  }
+
+    .whatsapp-btn{
+      width: 40px;
+     height: 40px; 
+    }
+  .whatsapp-btn img{
+    width: 70px;
+    height: 70px;
+  }
+        }
+
+ 
+          @media screen and (max-width: 400px) { 
+
+            .logo {
+            width: 70px;
+            }
+
+            .menu__hamburguer img{
+
+              width: 20px;
+            }
+            
+             .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        
+                   }
+           .pago img{
+              width: 40px;
+               }
+
+            .texxtoM{
+              font-size: 14PX;
+            }
+            .menu{
+              width: 400px;
+              height: 120px;
+            }
+            .header{
+              width: 400px;
+              margin-top: 60px;
+              height: 300px;
+            }
+
+            .titul p{
+              font-size: 12px;
+               height: 20px;
+          }
+          .titul{
+            height: 50px;
+          }
+
+          #text{
+            font-size: 11px;
+            height: 100px;
+            overflow: scroll;
+          
+          }
+           #contenedor{
+            width: 400px;
+            height: 230px;
+           }
+           #contenidos{
+            width: 400px;
+            height: 230px;
+           }
+           #img{
+            width: 230px;
+            height: 200px;
+           }
+           .contenedor1{
+            width: 400px;
+            height: 480px;
+           }
+            .mision p{
+    width: 100px;
+    height: 190px;
+    font-size: 11px;
+  }
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 11px;
+          width: 350px;
+       
+        
+      
+        
+        }
+         #imgOscuro{
+          width: 400px;
+          height: 250px;
+         }
+
+               #imgOscuro img{
+   width: 400px;
+   height: 260px;
+    
+
+  }
+
+    .whatsapp-btn{
+      width: 40px;
+     height: 40px; 
+    }
+  .whatsapp-btn img{
+    width: 70px;
+    height: 70px;
+  }
+        }
+
+
+      
+ 
+          @media screen and (max-width: 375px) { 
+
+            .logo {
+            width: 70px;
+            }
+
+            .menu__hamburguer img{
+
+              width: 20px;
+            }
+            
+             .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        
+                   }
+           .pago img{
+              width: 40px;
+               }
+
+            .texxtoM{
+              font-size: 14PX;
+            }
+            .menu{
+              width: 400px;
+              height: 120px;
+            }
+            .header{
+              width: 400px;
+              margin-top: 60px;
+              height: 300px;
+            }
+
+            .titul p{
+              font-size: 12px;
+               height: 20px;
+          }
+          .titul{
+            height: 50px;
+          }
+
+          #text{
+            font-size: 11px;
+            height: 100px;
+            overflow: scroll;
+          
+          }
+           #contenedor{
+            width: 400px;
+            height: 230px;
+           }
+           #contenidos{
+            width: 400px;
+            height: 230px;
+           }
+           #img{
+            width: 230px;
+            height: 200px;
+           }
+           .contenedor1{
+            width: 375px;
+            height: 380px;
+           }
+
+            .contenedor1 img{
+            width: 120;
+            height: 380px;
+            } 
+            .mision{
+              width: 90px;
+              height: 260px;
+            }
+             .mision p{
+    width: 120px;
+    font-size: 10px;
+   }
+
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 10px;
+          width: 350px;
+       
+    
+        }
+
+             
+      .contenedor2-1{
+        width: 105%;
+      }
+       
+         #imgOscuro{
+          width: 400px;
+          height: 250px;
+         }
+
+               #imgOscuro img{
+   width: 400px;
+   height: 260px;
+    
+
+  }
+
+    .whatsapp-btn{
+      width: 40px;
+     height: 40px; 
+    }
+  .whatsapp-btn img{
+    width: 70px;
+    height: 70px;
+  }
+        }
+
+
+           
+ 
+          @media screen and (max-width: 360px) { 
+
+            .logo {
+            width: 70px;
+            }
+
+            .menu__hamburguer img{
+
+              width: 20px;
+            }
+            
+             .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        
+                   }
+           .pago img{
+              width: 40px;
+               }
+
+            .texxtoM{
+              font-size: 14PX;
+            }
+            .menu{
+              width: 360px;
+              height: 120px;
+            }
+            .header{
+               width: 360px;
+              margin-top: 60px;
+              height: 300px;
+            }
+
+            .titul p{
+              font-size: 12px;
+               height: 20px;
+          }
+          .titul{
+            height: 50px;
+          }
+
+          #text{
+            font-size: 11px;
+            height: 100px;
+            overflow: scroll;
+          
+          }
+           #contenedor{
+             width: 360px;
+            height: 230px;
+           }
+           #contenidos{
+             width: 360px;
+            height: 230px;
+           }
+           #img{
+            width: 190px;
+            height: 200px;
+           }
+           .contenedor1{
+            width: 360px;
+            height: 380px;
+           }
+
+            .contenedor1 img{
+            width: 120;
+            height: 380px;
+            } 
+            .mision{
+              width: 90px;
+              height: 260px;
+            }
+             .mision p{
+    width: 120px;
+    font-size: 10px;
+   }
+
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 10px;
+          width: 350px;
+       
+    
+        }
+
+             
+      .contenedor2-1{
+        width: 105%;
+      }
+       
+         #imgOscuro{
+         width: 360px;
+          height: 250px;
+         }
+
+               #imgOscuro img{
+    width: 360px;
+   height: 300px;
+    
+
+  }
+
+    .whatsapp-btn{
+      width: 40px;
+     height: 40px; 
+    }
+  .whatsapp-btn img{
+    width: 70px;
+    height: 70px;
+  }
+        }
+          @media screen and (max-width: 300px) {
+
+
+
+
+
+              .logo {
+            width: 60px;
+            }
+
+            
+             .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        
+                   }
+           .pago img{
+              width: 35px;
+               }
+
+            .texxtoM{
+              font-size: 14PX;
+            }
+                   .menu__hamburguer img{
+            width: 18px;
+             }
+
+             .menu__hamburguer{
+              width: 0;
+              height: 0;
+             }
+
+            
+                .texxtoM{
+              font-size: 11PX;
+            }
+              .menu{
+              width: 300px;
+              height: 100px;
+            }
+            .header{
+             width: 300px;
+              margin-top: 80px;
+              height: 260px;
+            }
+
+            .titul p{
+              font-size: 10px;
+               height: 10px;
+          }
+          .titul{
+            height: 30px;
+          }
+
+          #text{
+            width: 90px;
+            height: 170px;
+            font-size: 10px;
+            height: 100px;
+            overflow: scroll;
+          
+          }
+           #contenedor{
+           width: 300px;
+            height: 230px;
+           }
+           #contenidos{
+            width: 300px;
+            height: 230px;
+           }
+           #img{
+            width: 150px;
+            height: 190px;
+           }
+           .contenedor1{
+            width: 300px;
+            height: 330px;
+           }
+
+         .contenedor1 img{
+          width: 200px;
+          height: 300px;
+         }
+
+             .mision p{
+    width: 100px;
+    height: 190px;
+    font-size: 10px;
+    overflow: scroll;
+   }
+
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 10px;
+          width: 350px;
+       
+        
+      
+        
+        }
+         #imgOscuro{
+        width: 300px;
+          height: 200px;
+         }
+
+               #imgOscuro img{
+   width: 300px;
+   height: 200px;
+    
+  }
+    }
+
+  @media screen and (max-width: 250px) { 
+
+    
+
+            
+             .pago{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 8px;
+        top: 10px;
+                  }
+           .pago img{
+              width: 35px;
+               }
+
+             .menu__hamburguer{
+              width: 0;
+              height: 0;
+             }
+
+          .menu__hamburguer img{
+          width: 15px;
+           }
+
+           .logo{
+              width: 55px;
+            }
+                .texxtoM{
+              font-size: 10PX;
+            }
+              .menu{
+              width: 250px;
+              height: 80px;
+            }
+            .header{
+            width: 250px;
+              margin-top: 60px;
+              height: 150px;
+            }
+
+            .titul p{
+              font-size: 8px;
+               height: 10px;
+          }
+          .titul{
+            height: 30px;
+          }
+
+          #text{
+            width: 70px;
+            height: 100px;
+            font-size: 8px;
+            height: 100px;
+            overflow: scroll;
+          
+          }
+
+          .paquetes{
+            width: 20px;
+          }
+           #contenedor{
+            width: 250px;
+            height: 180px;
+           }
+           #contenidos{
+           width: 250px;
+            height: 180px;
+           }
+           #img{
+            width: 130px;
+            height: 140px;
+           }
+           .contenedor1{
+          width: 250px;
+            height: 260px;
+           }
+
+         .contenedor1 img{
+          width: 150px;
+          height: 250px;
+         }
+         .mision h1{
+          font-size: 12;
+         }
+
+             .mision p{
+    width: 50px;
+    height: 140px;
+    font-size: 8px;
+    overflow: scroll;
+   }
+
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 10px;
+          width: 350px;
+       
+        
+      
+        
+        }
+         #imgOscuro{
+       width: 250px;
+          height: 200px;
+         }
+
+               #imgOscuro img{
+   width: 250px;
+   height: 200px;
+    
+  }
+
+  }
+
+   @media screen and (max-width: 200px) { 
+
+     .logo{
+              width: 40px;
+            }
+
+            .menu__hamburguer img{
+    width: 12px;
+  }
+
+                .texxtoM{
+              font-size: 10PX;
+            }
+              .menu{
+              width: 200px;
+              height: 60px;
+            }
+            .header{
+             width: 200px;
+              margin-top: 60px;
+              height: 150px;
+            }
+
+            .titul p{
+              font-size: 8px;
+               height: 10px;
+          }
+          .titul{
+            height: 30px;
+          }
+
+          #text{
+            width: 70px;
+            height: 100px;
+            font-size: 8px;
+            height: 100px;
+            overflow: scroll;
+          
+          }
+
+          .paquetes{
+            width: 20px;
+          }
+           #contenedor{
+             width: 200px;
+            height: 180px;
+           }
+           #contenidos{
+            width: 200px;
+            height: 180px;
+           }
+           #img{
+            width: 130px;
+            height: 140px;
+           }
+           .contenedor1{
+          width: 200px;
+            height: 260px;
+           }
+
+         .contenedor1 img{
+          width: 150px;
+          height: 250px;
+         }
+
+             .mision p{
+    width: 50px;
+    height: 140px;
+    font-size: 8px;
+    overflow: scroll;
+   }
+
+       .contenedortexto{
+        height: 100px;
+       }
+        .contenedortexto p{
+          font-size: 10px;
+          width: 350px;
+       
+        
+      
+        
+        }
+         #imgOscuro{
+       width: 200px;
+          height: 200px;
+         }
+
+               #imgOscuro img{
+    width: 200px;
+   height: 200px;
+    
+  }
+
+  }
+</style>
+
+
+</head>
+<body>
+   
+
+   <header class="menu">
+        <nav class="menu__container">
+            <img src="img/logo3.PNG"  alt="" class="logo">
+            <h3 class="texxtoM"> Flying Dress </h3>
+             
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="./index.html" class="menu__link">HOME</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">ABOUT <img src="img/R.png" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="./sub.paginas/paquete.html" class="menu__link menu__link--inside">Packages</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./sub.paginas/locaciones.html" class="menu__link menu__link--inside">Locations</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./sub.paginas/masinformacion.html" class="menu__link menu__link--inside">InFormacion</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item  menu__item--show">
+                    <a href="#" class="menu__link">Other activities  <img src="img/R.png" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="./sub.paginas/estudio.html" class="menu__link menu__link--inside"> studio</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./sub.paginas/estudio.html" class="menu__link menu__link--inside">Outdoors</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./sub.paginas/boda.html" class="menu__link menu__link--inside">Wedding</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="./sub.paginas/contacto1.html" class="menu__link">Contact</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src=".//img/menu.webp" class="menu__img">
+            </div>
+               <a href="./sub.paginas/pago.html" class="pago"> <img src="./img/pago.png" alt=""></a>
+        </nav>
+    </header>
+
+  <header class="header">
+  <div class="slider">
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+  </div>
+</header>
+ 
+
+ <div class="titul" >    
+  <p>WELCOME TO THE FLYING DRESS IN CARTAGENA</p>
+</div>
+
+<div id="contenedor">
+<div id="contenidos">
+<div id="text">Welcome! Feel like a queen and enjoy this photo session with The Flying Dress in Cartagena, Colombia, where you will receive excellent service and enjoy spectacular locations, including the old houses of Cartagena and beautiful beaches, offering high-quality photography.
+  <div>
+   <a href="./sub.paginas/paquete.html" class="paquetes">Packages</a>
+  </div>
+</div>
+<div id="img">
+</div>
+</div>
+</div>
+
+
+<div class="contenedor1"> 
+ <img src="img/morado3.jpg" class="imgcontenedor" alt="">
+ <div class="mision">
+ <h1>Mision</h1>
+ <p>The Flying Dress in Cartagena's mission is to provide you with excellent photographic service and personalized attention, with a trained and professional team that will be with you at all times, providing high-quality photographs in historical locations throughout Cartagena.</p>
+</div>
+</div>
+
+
+<div class="contenedortexto">
+  <p>The Flying Dress team in Cartagena consists of photographers and models providing excellent service during the photo shoot, moving around selected locations such as old houses in the historic city center, Getsemani, and Cartagena beaches.</p>
+</div>
+
+<div class="contenedor2-1">
+    <img src="../img/bolivar2.jpeg" alt="">
+    <img src="../img/blanco.jpg" alt="">
+    <img src="../img/flying4.jpg " alt="">
+</div>
+
+
+
+<div id="imgOscuro">
+  <img src="../img/rojo2.jpg" alt="">
+</div>
+
+
+   
+<!-- Botón de WhatsApp -->
+<a class="whatsapp-btn" href="https://wa.me/573007633378?texto=Hello, I'd like information about The Flying Dress in Cartagena." target="_blank">
+    <img src="./img/whatsapp4.webp" alt="WhatsApp">
+</a>
+
+
+
+
+
+<script>
+    window.addEventListener("scroll", function() {
+        let scrollPos = window.scrollY;
+
+        // Efecto parallax suave sin mover demasiado
+        document.getElementById("img1").style.transform =
+            "translateY(" + scrollPos * 0.1 + "px)";
+        document.getElementById("img2").style.transform =
+            "translateY(" + scrollPos * 0.1 + "px)";
+    });
+</script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
